@@ -19,7 +19,7 @@ average of each variable for each activity and each subject.
 The R script [run_analysis.R](run_analysis.R) looks for a file named *UCI HAR Dataset.zip*
 in the working directory. If the file is not found the script tries to download the data. 
 
-Details about the data analysis are described in the [CodeBook.md](code book) file. 
+Details about the data analysis are described in the [code book](CodeBook.md) file. 
 
 The final result of the script is a tidy data set, which is written to a file named
-*result.dat" in the working directory. 
+*result.dat* in the working directory. 
