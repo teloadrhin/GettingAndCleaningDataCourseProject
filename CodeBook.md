@@ -210,7 +210,7 @@ The file activity_labels.txt contains descriptive names for the numerical activi
 labels. The analysis script reads the names from this file and substitutes the numerical
 labels in the activity column of the data set with the corresponding name. 
 
-See the [run_analysis.R](source code) for details. 
+See the [source code](run_analysis.R) for details. 
 
 ### Appropriately label the data set with descriptive variable names
 As mentioned above, the names of the features are available and can be read in from the
