@@ -7,7 +7,7 @@ Dataset](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using
 and were downloaded from
 [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip). 
 
-The README.txt file in the ZIP-archive gives a brief description of the data: 
+The [README.txt](txt_files/README.txt) file in the ZIP-archive gives a brief description of the data: 
 
 > The experiments have been carried out with a group of 30 volunteers within an age bracket
 > of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS,
@@ -27,7 +27,7 @@ The README.txt file in the ZIP-archive gives a brief description of the data:
 > features was obtained by calculating variables from the time and frequency domain. 
 > ...
 
-More details are given in the file features_info.txt: 
+More details are given in the file [features_info.txt](txt_files/features_info.txt): 
 
 > The features selected for this database come from the accelerometer and gyroscope 3-axial
 > raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time)
@@ -101,7 +101,7 @@ This section gives a brief description of how the data analysis is done in the [
 script](run_analysis.R).
 
 ### Merge the training and the test sets to create one data set
-The README.txt file tells us where to find the training and test data sets and the
+The [README.txt](txt_files/README.txt) file tells us where to find the training and test data sets and the
 corresponding labels: 
 
 > ...  
@@ -128,7 +128,7 @@ is straight forward to merge the two data sets with `rbind`.
 ### Extract only the measurements on the mean and standard deviation for each measurement
 This task is actually not well defined and there is some room for interpretation. In any
 case it is necessary to have a look at the feature names, provided in the file
-features.txt: 
+[features.txt](txt_files/features.txt): 
 
 > 1 tBodyAcc-mean()-X  
 > 2 tBodyAcc-mean()-Y  
@@ -193,7 +193,7 @@ in some way to a mean, which have the strings "meanFreq()" and "Mean" as part of
 names. 
  
 
-The meaning of this names can be deduced from the description in the features_info.txt
+The meaning of this names can be deduced from the description in the [features_info.txt](txt_files/features_info.txt)
 file (see [above](#data-source)). 
 "Mean" only appears as part of angle features, which measure the angle between two
 vectors. This feature can not be interpreted simply as the mean of an measurement.
@@ -214,7 +214,7 @@ See the [run_analysis.R](source code) for details.
 
 ### Appropriately label the data set with descriptive variable names
 As mentioned above, the names of the features are available and can be read in from the
-file features.txt. 
+file [features.txt](txt_files/features.txt). 
 For better readability the following changes are made to the feature names
 
 >  * "()" -> removed  
@@ -251,17 +251,19 @@ STANDING, LAYING) while wearing a smartphone (Samsung Galaxy S II) on the waist.
 smartphone's gyroscope and accelerometer 3-axial linear acceleration and 3-axial angular
 velocity were measured at a constant rate of 50Hz. 
 
-The sensor signals were pre-processed and a set of features were computed, see README.txt
-and features_info.txt for details. For this data set only the features related to the
-measurements on the mean and standard deviation for each measurement were taken into
-account. For these features the mean over the groups for given person id and activity was
-taken. The final result is stored in a text file. The first column in the file contains
-the person id, the second column the name of the activity and the following columns the
-mean of the features. 
+The sensor signals were pre-processed and a set of features were computed, see
+[README.txt](txt_files/README.txt) and [features_info.txt](txt_files/features_info.txt)
+for details. For this data set only the features related to the measurements on the mean
+and standard deviation for each measurement were taken into account. For these features
+the mean over the groups for given person id and activity was taken. The final result is
+stored in a text file. The first column in the file contains the person id, the second
+column the name of the activity and the following columns the mean of the features.
 
 The feature column names have the general form "GroupMean.<FeatureName>". The explanation
-of the <FeatureName> can be found in the file features_info.txt of the original data set. 
+of the <FeatureName> can be found in the file
+[features_info.txt](txt_files/features_info.txt) of the original data set. 
 
-  
+
+---
 
 <a name="Footnote1">[1]</a>: Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
