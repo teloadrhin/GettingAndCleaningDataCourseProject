@@ -261,8 +261,8 @@ the mean over the groups for given person id and activity was taken. The final r
 stored in a text file. The first column in the file contains the person id, the second
 column the name of the activity and the following columns the mean of the features.
 
-The feature column names have the general form "[Time|Frequency].<FeatureName>". The explanation
-of the $<FeatureName> can be found in the file
+The feature column names have the general form "[Time|Frequency].$FeatureName". The explanation
+of the $FeatureName can be found in the file
 [features_info.txt](txt_files/features_info.txt) of the original data set. 
 
 
