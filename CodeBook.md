@@ -210,7 +210,7 @@ The file activity_labels.txt contains descriptive names for the numerical activi
 labels. The analysis script reads the names from this file and substitutes the numerical
 labels in the activity column of the data set with the corresponding name. 
 
-See the [run_analysis.R](source code) for details. 
+See the [source code](run_analysis.R) for details. 
 
 ### Appropriately label the data set with descriptive variable names
 As mentioned above, the names of the features are available and can be read in from the
@@ -224,6 +224,8 @@ For better readability the following changes are made to the feature names
 >  * Acc ->  Accelerometer  
 >  * Gyro -> Gyroscope  
 >  * Mag  -> Magnitude  
+>  * t at beginning of a name -> Time  
+>  * f at beginning of a name -> Frequency  
  
 The columns are then labeled with the corresponding feature name. 
 The column with the person identification is labeled "PersonID" and the activity column
@@ -259,8 +261,8 @@ the mean over the groups for given person id and activity was taken. The final r
 stored in a text file. The first column in the file contains the person id, the second
 column the name of the activity and the following columns the mean of the features.
 
-The feature column names have the general form "GroupMean.<FeatureName>". The explanation
-of the <FeatureName> can be found in the file
+The feature column names have the general form "[Time|Frequency].<FeatureName>". The explanation
+of the $<FeatureName> can be found in the file
 [features_info.txt](txt_files/features_info.txt) of the original data set. 
 
 

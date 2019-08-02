@@ -154,12 +154,15 @@ names(df_raw)[1:2]=c("PersonID","Activity")
 ##     Acc ->  Accelerometer 
 ##     Gyro -> Gyroscope
 ##     Mag  -> Magnitude
-##
+##     t at the beginning of a name -> Time
+##     f at the beginning of a name -> Frequency 
 nms <- sub("\\(\\)","",names(df_raw))
 nms <- make.names(nms)
 nms <- sub("Mag","Magnitude",nms)
 nms <- sub("Acc","Accelerometer",nms)
 nms <- sub("Gyro","Gyroscope",nms)
+nms <- sub("^t","Time.",nms)
+nms <- sub("^f","Frequency.",nms)
 
 names(df_raw) <- nms 
 
@@ -170,7 +173,7 @@ res <- as.data.frame(summarise_all(gp,mean))
 
 ## Tidy names
 for (i in 3:length(names(res))){
-    names(res)[i] <- paste0("GroupMean.",names(res)[i])
+    names(res)[i] <- names(res)[i]
 }
 
 ## Write dataset to file
