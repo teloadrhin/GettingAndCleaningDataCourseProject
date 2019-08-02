@@ -28,7 +28,7 @@ average of each variable for each activity and each subject.
   **IMPORTANT NOTE: The assignment instructions on this point are not clear and up to
   interpretation. Please check the explanation of which measurements were included and why
   in the code book. When grading my work, please do not deduct points simply because you
-  made a different choice**
+  made a different choice.**
   
 * The activity names can be found in a text file accompanying the original data set. The
   script reads the names and substitutes the numerical activity id by its name.
